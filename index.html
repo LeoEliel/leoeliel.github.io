@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Eliel - QA & Full Stack Developer</title>
     <style>
-        :root {
-            --bg-color: #0d1117;
-            --text-color: #c9d1d9;
-            --accent-color: #58a6ff;
-            --card-bg: #161b22;
-            --border-color: #30363d;
+:root {
+            /* Updated to match the light theme in the visualization */
+            --bg-color: #f5f5f5; /* Off-white */
+            --text-color: #333333; /* Dark Grey for text */
+            --accent-color: #316192; /* Deep Blue from PostgreSQL badge for accents */
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -20,15 +21,35 @@
             margin: 0;
             padding: 0;
         }
+        
+        /* New Header Styling */
         header {
             text-align: center;
-            padding: 4rem 2rem 2rem;
+            padding: 5rem 2rem; /* Added padding */
             border-bottom: 1px solid var(--border-color);
-            background-color: #010409;
+            background-color: var(--card-bg); /* Use white background for header */
         }
-        h1, h2, h3 { color: #ffffff; }
+        
+        /* Avatar Circle */
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1.5rem; /* Center and add space below */
+            border-radius: 50%; /* Make it a circle */
+            overflow: hidden; /* Ensure image stays inside circle */
+            border: 4px solid var(--border-color); /* Light border */
+        }
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        /* End New Header Styling */
+
+        h1, h2, h3 { color: #000000; } /* Set headings to pure black */
         .subtitle {
-            color: #8b949e;
+            color: #666666; /* Slightly greyed subtitle */
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
@@ -38,7 +59,7 @@
             padding: 2rem;
         }
         
-        /* Layout Bilíngue */
+        /* Layout Bilíngue (Unchanged) */
         .bilingual-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -138,9 +159,12 @@
 <body>
 
     <header>
+        <div class="avatar-container">
+            <img src="./assets/Image_1737564850376.jpg" alt="me">
+        </div>
         <h1>Leonardo Eliel 👋🏾</h1>
-        <p class="subtitle">QA Trainee @ Compass UOL | Full Stack & Mobile Developer</p>
-        <p style="color: #8b949e; font-size: 0.9rem;">📍 Arqiuemes, RO, Brasil | 🎓 5º Sem. Análise e Desenvolvimento de Sistemas (IFRO)</p>
+            <p class="subtitle">QA Trainee | Full Stack & Mobile Developer</p>
+            <p style="color: #8b949e; font-size: 0.9rem;">📍 Ariquemes, RO, Brasil | 🎓 5º Sem. ADS (IFRO)</p>
     </header>
 
     <div class="container">
