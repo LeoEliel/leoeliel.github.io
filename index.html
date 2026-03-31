@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Eliel - QA & Full Stack Developer</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #010409;
+        }
+        h1, h2, h3 { color: #ffffff; }
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Layout Bilíngue */
+        .bilingual-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 768px) {
+            .bilingual-section { grid-template-columns: 1fr; }
+        }
+
+        /* Certificações */
+        .certifications {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .certifications img {
+            transition: transform 0.3s ease;
+        }
+        .certifications img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tecnologias */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .tech-category {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .tech-category h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tech-category img { margin: 3px; }
+
+        /* Repositórios */
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .repo-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .repo-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+        .repo-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+        .repo-desc {
+            font-size: 0.9rem;
+            color: #8b949e;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+        .repo-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #8b949e;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Leonardo Eliel 👋🏾</h1>
+        <p class="subtitle">QA Trainee @ Compass UOL | Full Stack & Mobile Developer</p>
+        <p style="color: #8b949e; font-size: 0.9rem;">📍 Porto Velho, RO, Brasil | 🎓 5º Sem. Análise e Desenvolvimento de Sistemas (IFRO)</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Seção de Certificações em Destaque -->
+        <section class="certifications">
+            <h2>🏆 Certifications / Certificações</h2>
+            <p style="margin-bottom: 1.5rem; color: #8b949e;">AWS Certified Cloud Practitioner</p>
+            <a href="https://www.credly.com/badges/261b49fb-ec96-43b6-864b-5c89c3f45640/public_url" target="_blank">
+                <img src="https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner">
+            </a>
+        </section>
+
+        <!-- Seção Sobre Mim (Bilíngue) -->
+        <section class="bilingual-section">
+            <div class="lang-en">
+                <h2>👨🏾 About Me 🇬🇧</h2>
+                <p>I am a developer and Quality Assurance (QA) professional passionate about ensuring software excellence and reliability. I am constantly seeking to improve my skills in both building and validating software.</p>
+                <p>Proudly holding the <strong>AWS Certified Cloud Practitioner</strong> certification, solidifying my foundational knowledge of cloud concepts, security, and architecture.</p>
+                <ul>
+                    <li><strong>Professional Experience:</strong> Currently working as a <strong>QA Trainee at Compass UOL</strong>, where I focus on software quality, test automation, and agile methodologies.</li>
+                    <li><strong>Current Focus:</strong> Deeply involved in automated testing, continuous integration, and quality assurance using BDD/Gherkin, Robot Framework, and Postman.</li>
+                    <li><strong>Development:</strong> Beyond QA, I have hands-on experience with Full Stack and Mobile development, which gives me a strong systemic view of the applications I test.</li>
+                </ul>
+            </div>
+            
+            <div class="lang-pt">
+                <h2>👨🏾 Sobre Mim 🇧🇷</h2>
+                <p>Sou um desenvolvedor e profissional de Quality Assurance (QA) apaixonado por garantir a excelência e a confiabilidade de aplicações. Busco sempre aprimorar minhas habilidades tanto na construção quanto na validação de software.</p>
+                <p>Possuo a certificação <strong>AWS Certified Cloud Practitioner</strong>, permitindo uma base técnica em conceitos de nuvem, segurança e arquitetura AWS.</p>
+                <ul>
+                    <li><strong>Experiência Profissional:</strong> Atuo como <strong>QA Trainee na Compass UOL</strong>, onde desenvolvo atividades focadas na qualidade de software, automação de testes e aplicação de metodologias ágeis.</li>
+                    <li><strong>Foco Atual:</strong> Minha base de estudos e prática profissional concentra-se fortemente em testes automatizados, integração contínua e garantia de qualidade.</li>
+                    <li><strong>Desenvolvimento:</strong> Além de QA, tenho experiência prática com desenvolvimento Full Stack e Mobile, o que me proporciona uma visão sistêmica e profunda das aplicações que testo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tecnologias e Ferramentas -->
+        <section>
+            <h2 style="text-align: center; margin-bottom: 2rem;">🛠️ Technologies & Tools</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Quality Assurance & Testing</h3>
+                    <img src="https://img.shields.io/badge/Robot_Framework-000000?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Robot Framework">
+                    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+                    <img src="https://img.shields.io/badge/BDD_/_Gherkin-23D96C?style=for-the-badge&logo=cucumber&logoColor=white" alt="Cucumber/BDD">
+                </div>
+
+                <div class="tech-category">
+                    <h3>Agile Methodologies</h3>
+                    <img src="https://img.shields.io/badge/Scrum-F16624?style=for-the-badge&logo=scrum&logoColor=white" alt="Scrum">
+                    <img src="https://img.shields.io/badge/Kanban-0052CC?style=for-the-badge&logo=trello&logoColor=white" alt="Kanban">
+                </div>
+
+                <div class="tech-category">
+                    <h3>Backend & Databases</h3>
+                    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                    <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+                    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                </div>
+
+                <div class="tech-category">
+                    <h3>Frontend & Mobile</h3>
+                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                </div>
+
+                <div class="tech-category">
+                    <h3>DevOps & Infrastructure</h3>
+                    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+                    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
+                    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                </div>
+            </div>
+        </section>
+
+        <!-- Repositórios do GitHub -->
+        <section>
+            <h2>🚀 Repositórios / Projects</h2>
+            <div id="repos-container" class="repos-grid">
+                <p>Carregando repositórios do GitHub...</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>⭐️ Feel free to explore my repositories and get in touch! / Sinta-se à vontade para explorar meus repositórios e entrar em contato!</p>
+    </footer>
+
+    <script>
+        // ATENÇÃO: Substitua pelo seu usuário exato do GitHub
+        const githubUsername = 'LeoEliel';
+        const reposContainer = document.getElementById('repos-container');
+
+        async function fetchRepos() {
+            try {
+                const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=6`);
+                const repos = await response.json();
+                
+                reposContainer.innerHTML = ''; 
+
+                repos.forEach(repo => {
+                    if (!repo.fork) { 
+                        const card = document.createElement('div');
+                        card.className = 'repo-card';
+                        
+                        card.innerHTML = `
+                            <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
+                            <p class="repo-desc">${repo.description || 'Sem descrição.'}</p>
+                            <div class="repo-stats">
+                                <span>⭐ ${repo.stargazers_count}</span>
+                                <span>🍴 ${repo.forks_count}</span>
+                                <span>💻 ${repo.language || 'N/A'}</span>
+                            </div>
+                        `;
+                        reposContainer.appendChild(card);
+                    }
+                });
+            } catch (error) {
+                reposContainer.innerHTML = '<p>Erro ao carregar repositórios.</p>';
+            }
+        }
+
+        fetchRepos();
+    </script>
+</body>
+</html>
